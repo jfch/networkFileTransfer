@@ -1,0 +1,295 @@
+Response is Received from 2
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: /127.0.0.1:9042 (com.datastax.driver.core.exceptions.InvalidQueryException: unconfigured table schema_keyspaces))
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:227)
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:82)
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1307)
+	at com.datastax.driver.core.Cluster.init(Cluster.java:159)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:249)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:282)
+	at gash.router.server.db.MyCassandraDB.<init>(MyCassandraDB.java:26)
+	at gash.router.server.db.DatabaseService.getDb(DatabaseService.java:30)
+	at gash.router.raft.LeaderService.handleHeartBeatResponse(LeaderService.java:87)
+	at gash.router.server.WorkHandler.handleMessage(WorkHandler.java:87)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:131)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:34)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:153)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:132)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+unixTimeStamp: 1478432280
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+John:----------channelRead0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+Messsage ReceivedunixTimeStamp: 1478432280
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+Print Work here
+
+Work: John:---------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!unixTimeStamp: 1478432280
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+ The node: 2 Is Active to this IP: 127.0.1.1
+Currrent Term 2
+Unable to create channel!
+[Thread-3] INFO edge monitor - trying to connect to node 6
+[Thread-3] INFO edge monitor - Connected to node 6false
+Sent HeartBeatPacket to 1
+Sent HeartBeatPacket to 2
+unixTimeStamp: 1478432282
+heartBeatPacket {
+  unixTimestamp: 1478432282
+  heartBeatResponse {
+    term: 2
+    nodeId: 2
+    timeStampOnLatestUpdate: 0
+  }
+}
+
+John:----------channelRead0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+Messsage ReceivedunixTimeStamp: 1478432282
+heartBeatPacket {
+  unixTimestamp: 1478432282
+  heartBeatResponse {
+    term: 2
+    nodeId: 2
+    timeStampOnLatestUpdate: 0
+  }
+}
+
+Print Work here
+
+Work: 
+--------------HeartBeatPacket---------------
+
+1478432282
+Response is Received from 2
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: /127.0.0.1:9042 (com.datastax.driver.core.exceptions.InvalidQueryException: unconfigured table schema_keyspaces))
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:227)
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:82)
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1307)
+	at com.datastax.driver.core.Cluster.init(Cluster.java:159)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:249)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:282)
+	at gash.router.server.db.MyCassandraDB.<init>(MyCassandraDB.java:26)
+	at gash.router.server.db.DatabaseService.getDb(DatabaseService.java:30)
+	at gash.router.raft.LeaderService.handleHeartBeatResponse(LeaderService.java:87)
+	at gash.router.server.WorkHandler.handleMessage(WorkHandler.java:87)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:131)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:34)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:153)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:132)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+unixTimeStamp: 1478432283
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+John:----------channelRead0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+Messsage ReceivedunixTimeStamp: 1478432283
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+Print Work here
+
+Work: John:---------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!unixTimeStamp: 1478432283
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+ The node: 2 Is Active to this IP: 127.0.1.1
+Currrent Term 2
+Unable to create channel!
+[Thread-3] INFO edge monitor - trying to connect to node 6
+[Thread-3] INFO edge monitor - Connected to node 6false
+Sent HeartBeatPacket to 1
+Sent HeartBeatPacket to 2
+unixTimeStamp: 1478432285
+heartBeatPacket {
+  unixTimestamp: 1478432285
+  heartBeatResponse {
+    term: 2
+    nodeId: 2
+    timeStampOnLatestUpdate: 0
+  }
+}
+
+John:----------channelRead0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+Messsage ReceivedunixTimeStamp: 1478432285
+heartBeatPacket {
+  unixTimestamp: 1478432285
+  heartBeatResponse {
+    term: 2
+    nodeId: 2
+    timeStampOnLatestUpdate: 0
+  }
+}
+
+Print Work here
+
+Work: 
+--------------HeartBeatPacket---------------
+
+1478432285
+Response is Received from 2
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: /127.0.0.1:9042 (com.datastax.driver.core.exceptions.InvalidQueryException: unconfigured table schema_keyspaces))
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:227)
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:82)
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1307)
+	at com.datastax.driver.core.Cluster.init(Cluster.java:159)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:249)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:282)
+	at gash.router.server.db.MyCassandraDB.<init>(MyCassandraDB.java:26)
+	at gash.router.server.db.DatabaseService.getDb(DatabaseService.java:30)
+	at gash.router.raft.LeaderService.handleHeartBeatResponse(LeaderService.java:87)
+	at gash.router.server.WorkHandler.handleMessage(WorkHandler.java:87)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:131)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:34)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:153)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:132)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+unixTimeStamp: 1478432286
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+John:----------channelRead0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+Messsage ReceivedunixTimeStamp: 1478432286
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+Print Work here
+
+Work: John:---------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!unixTimeStamp: 1478432286
+trivialPing {
+  nodeId: 2
+  IP: "127.0.1.1"
+  port: 0
+}
+
+ The node: 2 Is Active to this IP: 127.0.1.1
+Currrent Term 2
+Unable to create channel!
+[Thread-3] INFO edge monitor - trying to connect to node 6
+[Thread-3] INFO edge monitor - Connected to node 6false
+Sent HeartBeatPacket to 1
+Sent HeartBeatPacket to 2
+unixTimeStamp: 1478432288
+heartBeatPacket {
+  unixTimestamp: 1478432288
+  heartBeatResponse {
+    term: 2
+    nodeId: 2
+    timeStampOnLatestUpdate: 0
+  }
+}
+
+John:----------channelRead0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+Messsage ReceivedunixTimeStamp: 1478432288
+heartBeatPacket {
+  unixTimestamp: 1478432288
+  heartBeatResponse {
+    term: 2
+    nodeId: 2
+    timeStampOnLatestUpdate: 0
+  }
+}
+
+Print Work here
+
+Work: 
+--------------HeartBeatPacket---------------
+
+1478432288
+Response is Received from 2
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: /127.0.0.1:9042 (com.datastax.driver.core.exceptions.InvalidQueryException: unconfigured table schema_keyspaces))
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:227)
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:82)
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1307)
+	at com.datastax.driver.core.Cluster.init(Cluster.java:159)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:249)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:282)
+	at gash.router.server.db.MyCassandraDB.<init>(MyCassandraDB.java:26)
+	at gash.router.server.db.DatabaseService.getDb(DatabaseService.java:30)
+	at gash.router.raft.LeaderService.handleHeartBeatResponse(LeaderService.java:87)
+	at gash.router.server.WorkHandler.handleMessage(WorkHandler.java:87)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:131)
+	at gash.router.server.WorkHandler.channelRead0(WorkHandler.java:34)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:153)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:132)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+^Cjf@jf:/mnt/project$ 

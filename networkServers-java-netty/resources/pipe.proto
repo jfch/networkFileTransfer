@@ -1,0 +1,18 @@
+option optimize_for = SPEED;
+option java_package = "routing";
+
+import "common.proto";
+
+
+message CommandMessage {
+   optional Header header = 1;
+
+    oneof payload {
+
+      Failure err = 2;
+      
+      bool ping = 4;
+
+      string message = 3;
+    }
+}
